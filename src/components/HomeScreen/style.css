@@ -1,0 +1,44 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.homeScreenContainer {
+  background-color: #e4dbd5;
+  margin: 0 4%;
+}
+
+.homeScreenImg1 {
+  width: 100%;
+  padding: 5% 0;
+}
+
+.homeScreenImg2 {
+  padding-top: 20%;
+}
+
+.main-text {
+  margin-left: -5%;
+}
+
+.homeScreenImg2-col {
+  margin-left: 5%;
+  padding-right: 0.5%;
+}
+
+.homeScreenBtn {
+  color: #9b918b;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  text-underline-offset: 5px;
+}
+
+.homeScreenBtn:hover {
+  color: #978457;
+}
+
+.h1-homeScreen {
+  letter-spacing: 6px;
+  width: 200%;
+  margin-bottom: 10%;
+}

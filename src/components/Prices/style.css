@@ -1,0 +1,33 @@
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #9b918b;
+}
+
+p {
+  font-size: 20px;
+  color: #9b918b;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.pricesContainer {
+  background-color: #e4dbd5;
+  margin: 0 4%;
+  padding-top: 10%;
+}
+
+.h1-prices {
+  font-size: 60px;
+  letter-spacing: 6px;
+  margin-top: -30px;
+  margin-left: 5%;
+}
+
+.pricesImg {
+    width: 80%;
+}
