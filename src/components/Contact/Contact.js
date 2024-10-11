@@ -11,12 +11,10 @@ const Contact = () => {
         <Row>
           <Col lg={4} sm={12}>
             <Row
-              className="align-items-center col-contact"
-              style={{ padding: "5% 10%" }}
+              className="align-items-center col-contact col-pad"
             >
-              {/* <Col className="text-end"> */}
               <Col
-                className={window.innerWidth > 576 ? "text-end" : "text-center"}
+                className={window.innerWidth > 576 ? "text-end" : "text-start"}
               >
                 <img
                   src="phone.png"
@@ -33,11 +31,10 @@ const Contact = () => {
           </Col>
           <Col lg={4} sm={12}>
             <Row
-              className="align-items-center col-contact"
-              style={{ padding: "5% 10%" }}
+              className="align-items-center col-contact col-pad"
             >
               <Col
-                className={window.innerWidth > 576 ? "text-end" : "text-center"}
+                className={window.innerWidth > 576 ? "text-end" : "text-start"}
               >
                 <img
                   src="pin.png"
@@ -54,11 +51,10 @@ const Contact = () => {
           </Col>
           <Col lg={4} sm={12}>
             <Row
-              className="align-items-center col-contact"
-              style={{ padding: "5% 10%" }}
+              className="align-items-center col-contact col-pad"
             >
               <Col
-                className={window.innerWidth > 576 ? "text-end" : "text-center"}
+                className={window.innerWidth > 576 ? "text-end" : "text-start"}
               >
                 <img
                   src="schedule.png"

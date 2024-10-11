@@ -28,9 +28,17 @@ h4 {
   border-radius: 5%;
 }
 
+.col-pad {
+  padding: 5% 10%;
+}
+
 @media (max-width: 576px) {
   .col-contact {
     padding-top: 10%;
+  }
+
+  .col-pad {
+    padding: 5% 5% 5% 10%;
   }
 
   h4 {
