@@ -26,4 +26,10 @@
   .gallery-slider {
     padding: 0 0 10% 0;
   }
+
+  .img-slider {
+    width: 80%;
+    margin: auto;
+    padding: 2.5% 0;
+  }
 }
