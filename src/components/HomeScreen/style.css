@@ -49,19 +49,19 @@
   }
 
   .homeScreenImg1 {
-    width: 75%;
+    padding-top: 10%;
+    width: 100%;
   }
 
   .h1-homeScreen {
     letter-spacing: 6px;
     width: 100%;
-    margin-bottom: 10%;
+    font-size: 25px;
   }
 
   .main-text {
-    text-align: end !important;
     margin-left: 0;
-    padding-right: 5%;
+    padding-top: 10%;
   }
 
   .homeScreenImg2 {

@@ -16,7 +16,14 @@ const HomeScreen = () => {
         >
           <Container>
             <Row>
-              <Col lg={5} className="align-content-center">
+              <Col
+                lg={5}
+                className={
+                  window.innerWidth > 576
+                    ? "align-content-center"
+                    : "align-content-center order-2"
+                }
+              >
                 <img
                   className="homeScreenImg1"
                   alt="homeScreenImg"
@@ -24,7 +31,14 @@ const HomeScreen = () => {
                   loading="lazy"
                 />
               </Col>
-              <Col lg={4} className="text-start align-content-center main-text">
+              <Col
+                lg={4}
+                className={
+                  window.innerWidth > 576
+                    ? "text-start align-content-center main-text"
+                    : "text-center align-content-center main-text order-1"
+                }
+              >
                 <h1 className="h1-homeScreen">
                   a SPACE to FIND
                   <br />
