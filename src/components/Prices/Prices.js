@@ -22,11 +22,11 @@ const Prices = () => {
         <Container>
           <Row>
             <Col lg={6} style={{ paddingTop: "7%" }}>
-              <Row className="text-start" style={{ marginLeft: "65px" }}>
+              <Row className="text-start" style={{ marginLeft: "10%" }}>
                 <h3>HERE YOU CAN FIND</h3>
                 <h1 className="h1-prices">prices</h1>
               </Row>
-              <Row style={{ marginLeft: "65px", marginTop: "30px" }}>
+              <Row style={{ marginLeft: "10%", marginTop: "5%" }}>
                 <Row>
                   <Col className="text-start">
                     <p>dam/herr klippning</p>
@@ -78,7 +78,7 @@ const Prices = () => {
               </Row>
               <Row
                 className="justify-content-center"
-                style={{ marginLeft: "65px", marginTop: "60px" }}
+                style={{ marginLeft: "10%", marginTop: "10%" }}
               >
                 <Button
                   onClick={() => {
