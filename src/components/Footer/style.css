@@ -1,0 +1,41 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.footerContainer {
+  background-color: #e4dbd5;
+  margin: 0 4%;
+}
+
+.logo_footer {
+  transform: rotate(90deg);
+  width: 50%;
+}
+
+.img-footer {
+  width: 100%;
+}
+
+.h3-footer {
+  padding-bottom: 2%;
+}
+
+@media (max-width: 576px) {
+  .img-footer {
+    width: 50%;
+  }
+
+  .logo_footer {
+    transform: rotate(0);
+    width: 80%;
+  }
+
+  .h3-footer {
+    padding-top: 3%;
+  }
+
+  .btn-footer {
+    margin-bottom: 5%;
+  }
+}

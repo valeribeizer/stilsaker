@@ -1,0 +1,29 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.galleryContainer {
+  background-color: #e4dbd5;
+  margin: 0 4%;
+}
+
+.gallery-slider {
+  width: 100% !important;
+  margin-bottom: 0;
+  padding: 0 0 2% 0;
+}
+
+.img-slider {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 2.5%;
+  border-radius: 5%;
+}
+
+@media (max-width: 576px) {
+  .gallery-slider {
+    padding: 0 0 10% 0;
+  }
+}

@@ -43,3 +43,28 @@
 .btn {
   --bs-btn-border-radius: 20px;
 }
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    gap: 20px;
+  }
+
+  .navbar-collapse {
+    text-align: right;
+  }
+
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .btn-navbar {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+}

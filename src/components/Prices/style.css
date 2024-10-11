@@ -16,9 +16,9 @@ p {
 }
 
 .pricesContainer {
-  background-color: #e4dbd5;
+  background-color: #f1eae5;
   margin: 0 4%;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .h1-prices {
@@ -28,6 +28,21 @@ p {
   margin-left: 5%;
 }
 
+.col-prices-img {
+  padding-right: 0.55%;
+}
+
 .pricesImg {
-    width: 80%;
+  width: 80%;
+}
+
+@media (max-width: 576px) {
+  .pricesImg {
+    width: 70%;
+  }
+
+  .col-prices-img {
+    padding-top: 10%;
+    padding-right: 2.5%;
+  }
 }

@@ -33,22 +33,19 @@ const NavBar = () => {
       expand="lg"
       className={navbar ? "bg-body-tertiary-active" : "bg-body-tertiary"}
       sticky="top"
-      style={{ marginTop: "2%", marginRight: "4%", marginLeft: "4%", padding: "10px 80px" }}
+      style={{ marginTop: "2%", marginRight: "4%", marginLeft: "4%", padding: "1% 4%" }}
     >
       <Container>
         <Navbar.Brand href="#home">
           {window.innerWidth > 600 ? (
             <img src="logo.png" alt="logo" style={{ width: "240px" }} />
           ) : (
-            <img src="logo.png" alt="logo" style={{ width: "120px" }} />
+            <img src="logo.png" alt="logo" style={{ width: "160px" }} />
           )}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" id="navBtn" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto align-items-end">
-            <Nav.Link href="#about" onClick={handleCollapse}>
-              om oss
-            </Nav.Link>
             <Nav.Link href="#prices" onClick={handleCollapse}>
               prislista
             </Nav.Link>
@@ -60,6 +57,7 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <Button
+          className="btn-navbar"
             onClick={() => {
               window.location.href = url;
             }}

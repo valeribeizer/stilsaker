@@ -1,0 +1,28 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.contactContainer {
+  background-color: #919692;
+  margin: 0 4%;
+  padding: 2% 0 1%;
+}
+
+h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #DDCABD;
+}
+
+.p-contact {
+    color: #DDCABD;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .col-contact {
+    padding-top: 10%;
+  }
+}

@@ -23,7 +23,7 @@
 
 .homeScreenImg2-col {
   margin-left: 5%;
-  padding-right: 0.5%;
+  padding-right: 0.55%;
 }
 
 .homeScreenBtn {
@@ -41,4 +41,30 @@
   letter-spacing: 6px;
   width: 200%;
   margin-bottom: 10%;
+}
+
+@media (max-width: 576px) {
+  .homeScreenContainer {
+    padding-bottom: 5%;
+  }
+
+  .homeScreenImg1 {
+    width: 75%;
+  }
+
+  .h1-homeScreen {
+    letter-spacing: 6px;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .main-text {
+    text-align: end !important;
+    margin-left: 0;
+    padding-right: 5%;
+  }
+
+  .homeScreenImg2 {
+    display: none;
+  }
 }
