@@ -34,32 +34,32 @@ const Gallery = () => {
 
   const gallery = [
     {
-      src: "img1.png",
-      alt: "img1",
+      src: "blond-hair.png",
+      alt: "blond-hair",
     },
     {
-      src: "img2.png",
-      alt: "img2",
+      src: "balayage.png",
+      alt: "balayage",
     },
     {
-      src: "img4.png",
-      alt: "img4",
+      src: "balayage2.png",
+      alt: "balayage2",
     },
     {
-      src: "img5.png",
-      alt: "img5",
+      src: "hair-styling.png",
+      alt: "hair-styling",
     },
     {
-      src: "img6.png",
-      alt: "img6",
+      src: "blond-styling.png",
+      alt: "blond-styling",
     },
     {
-      src: "img7.png",
-      alt: "img7",
+      src: "klippning.png",
+      alt: "klippning",
     },
     {
-      src: "img8.png",
-      alt: "img8",
+      src: "klippning-long-hair.png",
+      alt: "klippning-long-hair",
     },
   ];
 

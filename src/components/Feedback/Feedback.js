@@ -15,6 +15,21 @@ const Feedback = () => {
     slidesToScroll: 1,
   };
 
+  const feedback_arr = [
+    {
+      feedback: "Superbra, supernöjd. Sneja har klippt och schamponerat mitt hår och min sons, så många och alltid med nit och skicklighet.",
+      client: "PETER",
+    },
+    {
+      feedback: "Litar inte på någon annan frisör än Sneja, hon har tagit hand om mitt hår under en lång tid och jag är mer än nöjd med resultatet varje gång.",
+      client: "KARINA",
+    },
+    {
+      feedback: "Nyss hemkommen från en lååång, underbar behandling hos favoritfrissan! Känner mej alldeles NY. Så lyxigt att vara helt själv i salongen, eftersom det bara är en frisör på denna salong. Tryggt o säkert inte minst i dessa tider! Kan varmt rekommenderas.",
+      client: "MARION",
+    },
+  ];
+
   return (
     <div id="feedback" className="feedbackContainer">
       <AnimatedOnScroll
@@ -41,53 +56,21 @@ const Feedback = () => {
           <Row className="justify-content-center">
             <div className="slider-container">
               <Slider {...settings}>
-                <div>
-                  <Row>
-                    <h1 className="h1-feedback-sign">"</h1>
-                  </Row>
-                  <Row>
-                    <p className="p-feedback">
-                      Superbra, supernöjd. Sneja har klippt och schamponerat
-                      mitt hår och min sons, så många och alltid med nit och
-                      skicklighet.
-                    </p>
-                  </Row>
-                  <Row>
-                    <h3 className="h3-feedback">PETER</h3>
-                  </Row>
-                </div>
-                <div>
-                  <Row>
-                    <h1 className="h1-feedback-sign">"</h1>
-                  </Row>
-                  <Row>
-                    <p className="p-feedback">
-                      Litar inte på någon annan frisör än Sneja, hon har tagit
-                      hand om mitt hår under en lång tid och jag är mer än nöjd
-                      med resultatet varje gång.
-                    </p>
-                  </Row>
-                  <Row>
-                    <h3 className="h3-feedback">KARINA</h3>
-                  </Row>
-                </div>
-                <div>
-                  <Row>
-                    <h1 className="h1-feedback-sign">"</h1>
-                  </Row>
-                  <Row>
-                    <p className="p-feedback">
-                      Nyss hemkommen från en lååång, underbar behandling hos
-                      favoritfrissan! Känner mej alldeles NY. Så lyxigt att vara
-                      helt själv i salongen, eftersom det bara är en frisör på
-                      denna salong. Tryggt o säkert inte minst i dessa tider!
-                      Kan varmt rekommenderas.
-                    </p>
-                  </Row>
-                  <Row>
-                    <h3 className="h3-feedback">MARION</h3>
-                  </Row>
-                </div>
+                {feedback_arr.map(({ feedback, client }, index) => (
+                  <div key={index}>
+                    <Row>
+                      <h1 className="h1-feedback-sign">"</h1>
+                    </Row>
+                    <Row>
+                      <p className="p-feedback">
+                        {feedback}
+                      </p>
+                    </Row>
+                    <Row>
+                      <h3 className="h3-feedback">{client}</h3>
+                    </Row>
+                  </div>
+                ))}
               </Slider>
             </div>
           </Row>

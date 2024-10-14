@@ -10,13 +10,40 @@ import { AnimatedOnScroll } from "react-animated-css-onscroll";
 const Prices = () => {
   let url = "https://www.bokadirekt.se/places/stilsaker-25916";
 
+  const prices_arr = [
+    {
+      title: "dam/herr klippning",
+      price: "599/499 SEK",
+    },
+    {
+      title: "barnklippning",
+      price: "350 SEK",
+    },
+    {
+      title: "färgning",
+      price: "fr 1150 SEK",
+    },
+    {
+      title: "balayage",
+      price: "fr 1990 SEK",
+    },
+    {
+      title: "foljeslingor",
+      price: "fr 1490 SEK",
+    },
+    {
+      title: "luggklippning",
+      price: "120 SEK",
+    },
+  ];
+
   return (
     <div id="prices" className="pricesContainer">
       <AnimatedOnScroll
         animationIn="fadeInUp"
         animationInDelay="3"
         style={{
-          animationDuration: "6000ms",
+          animationDuration: "4000ms",
         }}
       >
         <Container>
@@ -27,54 +54,16 @@ const Prices = () => {
                 <h1 className="h1-prices">prices</h1>
               </Row>
               <Row style={{ marginLeft: "10%", marginTop: "5%" }}>
-                <Row>
-                  <Col className="text-start">
-                    <p>dam/herr klippning</p>
-                  </Col>
-                  <Col className="text-end">
-                    <h3>599/499 SEK</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="text-start">
-                    <p>barnklippning</p>
-                  </Col>
-                  <Col className="text-end">
-                    <h3>350 SEK</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="text-start">
-                    <p>färgning</p>
-                  </Col>
-                  <Col className="text-end">
-                    <h3>fr 1150 SEK</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="text-start">
-                    <p>balayage</p>
-                  </Col>
-                  <Col className="text-end">
-                    <h3>fr 1990 SEK</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="text-start">
-                    <p>foljeslingor</p>
-                  </Col>
-                  <Col className="text-end">
-                    <h3>fr 1490 SEK</h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="text-start">
-                    <p>luggklippning</p>
-                  </Col>
-                  <Col className="text-end">
-                    <h3>120 SEK</h3>
-                  </Col>
-                </Row>
+                {prices_arr.map(({ title, price }, index) => (
+                  <Row key={index}>
+                    <Col className="text-start">
+                      <p>{title}</p>
+                    </Col>
+                    <Col className="text-end">
+                      <h3>{price}</h3>
+                    </Col>
+                  </Row>
+                ))}
               </Row>
               <Row
                 className="justify-content-center"

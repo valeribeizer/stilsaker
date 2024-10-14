@@ -5,70 +5,52 @@ import Col from "react-bootstrap/Col";
 import "./style.css";
 
 const Contact = () => {
+  const contact_arr = [
+    {
+      src: "phone.png",
+      alt: "phone",
+      title: "HAVE QUESTIONS?",
+      desc: "073-730-89-90",
+    },
+    {
+      src: "pin.png",
+      alt: "pin",
+      title: "LOCATED AT",
+      desc: "norrbackagatan 48",
+    },
+    {
+      src: "schedule.png",
+      alt: "schedule",
+      title: "BUSINESS HOURS",
+      desc: "mon-sun 10am-8pm",
+    },
+  ];
   return (
     <div id="kontakt" className="contactContainer">
       <Container>
         <Row>
-          <Col lg={4} sm={12}>
-            <Row
-              className="align-items-center col-contact col-pad"
-            >
-              <Col
-                className={window.innerWidth > 576 ? "text-end" : "text-start"}
-              >
-                <img
-                  src="phone.png"
-                  alt="phone"
-                  loading="lazy"
-                  style={{ width: "40%" }}
-                />
-              </Col>
-              <Col>
-                <h4>HAVE QUESTIONS?</h4>
-                <h4>073-730-89-90</h4>
-              </Col>
-            </Row>
-          </Col>
-          <Col lg={4} sm={12}>
-            <Row
-              className="align-items-center col-contact col-pad"
-            >
-              <Col
-                className={window.innerWidth > 576 ? "text-end" : "text-start"}
-              >
-                <img
-                  src="pin.png"
-                  alt="pin"
-                  loading="lazy"
-                  style={{ width: "35%" }}
-                />
-              </Col>
-              <Col>
-                <h4>LOCATED AT</h4>
-                <p className="p-contact">norrbackagatan 48</p>
-              </Col>
-            </Row>
-          </Col>
-          <Col lg={4} sm={12}>
-            <Row
-              className="align-items-center col-contact col-pad"
-            >
-              <Col
-                className={window.innerWidth > 576 ? "text-end" : "text-start"}
-              >
-                <img
-                  src="schedule.png"
-                  alt="schedule"
-                  loading="lazy"
-                  style={{ width: "35%" }}
-                />
-              </Col>
-              <Col>
-                <h4>BUSINESS HOURS</h4>
-                <p className="p-contact">mon-sun 10am-8pm</p>
-              </Col>
-            </Row>
-          </Col>
+          {contact_arr.map(({ src, alt, width, title, desc }, index) => (
+            <Col lg={4} sm={12} key={index}>
+              <Row className="align-items-center col-contact col-pad">
+                <Col
+                  className={
+                    window.innerWidth > 576 ? "text-end" : "text-start"
+                  }
+                >
+                  <img
+                    src={src}
+                    alt={alt}
+                    loading="lazy"
+                    style={{ width: "35%" }}
+                  />
+                </Col>
+                <Col>
+                  <h4>{title}</h4>
+                  <h4>{desc}</h4>
+                </Col>
+              </Row>
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>
