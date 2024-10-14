@@ -29,7 +29,7 @@ const Contact = () => {
     <div id="kontakt" className="contactContainer">
       <Container>
         <Row>
-          {contact_arr.map(({ src, alt, width, title, desc }, index) => (
+          {contact_arr.map(({ src, alt, title, desc }, index) => (
             <Col lg={4} sm={12} key={index}>
               <Row className="align-items-center col-contact col-pad">
                 <Col
@@ -46,7 +46,7 @@ const Contact = () => {
                 </Col>
                 <Col>
                   <h4>{title}</h4>
-                  <h4>{desc}</h4>
+                  <p className="p-contact">{desc}</p>
                 </Col>
               </Row>
             </Col>
