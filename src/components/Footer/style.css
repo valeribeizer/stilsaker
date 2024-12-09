@@ -43,6 +43,8 @@
 
   .p-footer {
     font-size: 10px;
+    margin: auto;
+    width: 80%;
   }
 
   .btn-footer {
