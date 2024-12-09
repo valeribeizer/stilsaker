@@ -7,6 +7,7 @@ import "./style.css";
 
 const Footer = () => {
   let url = "https://www.bokadirekt.se/places/stilsaker-25916";
+  const currentYear = new Date().getFullYear();
 
   return (
     <div id="footer" className="footerContainer">
@@ -30,7 +31,8 @@ const Footer = () => {
           </Col>
           <Col lg={6} className="text-center">
             <h3 className="h3-footer">073-730-89-90</h3>
-            <Button className="btn-footer"
+            <Button
+              className="btn-footer"
               onClick={() => {
                 window.location.href = url;
               }}
@@ -39,6 +41,10 @@ const Footer = () => {
             </Button>
           </Col>
         </Row>
+        <p className="p-footer">
+          {currentYear}. All rights reserved | Designed and built with 🖤 by
+          Valeryia Beizer
+        </p>
       </Container>
     </div>
   );

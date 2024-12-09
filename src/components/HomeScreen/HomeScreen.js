@@ -42,9 +42,9 @@ const HomeScreen = () => {
                 <h1 className="h1-homeScreen">
                  a SPACE to FIND
                   <br />
-                  BEAUTY and that FEELS
+                  HEALING, GROWTH
                   <br />
-                  like HOME
+                  and RENEWAL
                 </h1>
                 <a href="#kontakt" className="homeScreenBtn">
                   GET IN TOUCH

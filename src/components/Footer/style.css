@@ -21,6 +21,12 @@
   padding-bottom: 2%;
 }
 
+.p-footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 3%;
+}
+
 @media (max-width: 576px) {
   .img-footer {
     width: 50%;
@@ -33,6 +39,10 @@
 
   .h3-footer {
     padding-top: 3%;
+  }
+
+  .p-footer {
+    font-size: 10px;
   }
 
   .btn-footer {
