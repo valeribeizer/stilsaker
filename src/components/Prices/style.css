@@ -13,6 +13,7 @@ p {
 .container {
   margin: 0;
   padding: 0;
+  display: contents;
 }
 
 .pricesContainer {
