@@ -13,7 +13,7 @@ const Footer = () => {
     <div id="footer" className="footerContainer">
       <Container>
         <Row className="align-items-center">
-          <Col lg={2}>
+          <Col lg={2} md={2}>
             <img
               className="img-footer"
               src="footer_img.png"
@@ -21,7 +21,7 @@ const Footer = () => {
               loading="lazy"
             />
           </Col>
-          <Col lg={4} className="text-center">
+          <Col lg={4} md={4} className="text-center">
             <img
               className="logo_footer"
               src="logo.png"
@@ -29,8 +29,10 @@ const Footer = () => {
               loading="lazy"
             />
           </Col>
-          <Col lg={6} className="text-center">
-            <h3 className="h3-footer">073-730-89-90</h3>
+          <Col lg={6} md={6} className="text-center">
+            <h3 className="h3-footer">
+              <a className="a-footer" href="tel: 0737308990">073-730-89-90</a>
+            </h3>
             <Button
               className="btn-footer"
               onClick={() => {

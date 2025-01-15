@@ -10,13 +10,13 @@ const Contact = () => {
       src: "phone.png",
       alt: "phone",
       title: "HAVE QUESTIONS?",
-      desc: "073-730-89-90",
+      desc: '<a class="a-contact" href="tel:0733708990">073-730-89-90</a>',
     },
     {
       src: "pin.png",
       alt: "pin",
       title: "LOCATED AT",
-      desc: "norrbackagatan 48",
+      desc: '<a class="a-contact" href="https://maps.app.goo.gl/MCdeUi9HfFUGh51v5">norrbackagatan 48</a>',
     },
     {
       src: "schedule.png",
@@ -30,23 +30,23 @@ const Contact = () => {
       <Container>
         <Row>
           {contact_arr.map(({ src, alt, title, desc }, index) => (
-            <Col lg={4} sm={12} key={index}>
+            <Col lg={4} md={4} sm={12} key={index}>
               <Row className="align-items-center col-contact col-pad">
                 <Col
                   className={
-                    window.innerWidth > 576 ? "text-end" : "text-start"
+                    window.innerWidth > 576 ? "text-end col-4" : "text-center col-4"
                   }
                 >
                   <img
                     src={src}
                     alt={alt}
                     loading="lazy"
-                    style={{ width: "35%" }}
+                    className="icons"
                   />
                 </Col>
-                <Col>
+                <Col className="col-8">
                   <h4>{title}</h4>
-                  <p className="p-contact">{desc}</p>
+                  <p className="p-contact" dangerouslySetInnerHTML={{ __html: desc }}></p>
                 </Col>
               </Row>
             </Col>

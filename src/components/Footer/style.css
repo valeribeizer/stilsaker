@@ -19,12 +19,17 @@
 
 .h3-footer {
   padding-bottom: 2%;
+  color: #9b918b;
 }
 
 .p-footer {
   font-size: 12px;
   text-align: center;
   margin-top: 3%;
+}
+
+.a-footer {
+  color: #9b918b;
 }
 
 @media (max-width: 576px) {
