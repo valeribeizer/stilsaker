@@ -59,12 +59,6 @@ p {
   }
 }
 
-@media (min-width: 820px) {
-  .pricesImg {
-    margin-right: -6%;
-  }
-}
-
 @media (min-width: 1024px) {
   .pricesImg {
     margin-right: 2.9%;
