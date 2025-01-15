@@ -18,9 +18,10 @@ const HomeScreen = () => {
             <Row>
               <Col
                 lg={5}
+                md={5}
                 className={
                   window.innerWidth > 576
-                    ? "align-content-center"
+                    ? "align-content-start"
                     : "align-content-center order-2"
                 }
               >
@@ -33,6 +34,7 @@ const HomeScreen = () => {
               </Col>
               <Col
                 lg={4}
+                md={4}
                 className={
                   window.innerWidth > 576
                     ? "text-start align-content-center main-text"
@@ -50,7 +52,7 @@ const HomeScreen = () => {
                   GET IN TOUCH
                 </a>
               </Col>
-              <Col lg={3} className="text-end homeScreenImg2-col">
+              <Col lg={3} md={3} className="text-end homeScreenImg2-col">
                 <img
                   className="homeScreenImg2"
                   alt="homeScreenImg"

@@ -5,20 +5,29 @@
 
 .homeScreenContainer {
   background-color: #e4dbd5;
+  padding-bottom: 5%;
   margin: 0 4%;
 }
 
 .homeScreenImg1 {
+  padding-top: 10%;
   width: 100%;
-  padding: 5% 0;
+}
+
+.h1-homeScreen {
+  letter-spacing: 6px;
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 5%;
 }
 
 .homeScreenImg2 {
-  padding-top: 20%;
+  display: none;
 }
 
 .main-text {
-  margin-left: -5%;
+  margin-left: 0;
+  padding-top: 10%;
 }
 
 .homeScreenImg2-col {
@@ -37,34 +46,98 @@
   color: #978457;
 }
 
-.h1-homeScreen {
-  letter-spacing: 2px;
-  width: 200%;
-  margin-bottom: 10%;
-}
-
-@media (max-width: 576px) {
+@media (min-width: 768px) {
   .homeScreenContainer {
-    padding-bottom: 5%;
+    margin: 0 4%;
+    padding-bottom: 0;
   }
 
   .homeScreenImg1 {
-    padding-top: 10%;
+    width: 85%;
+    padding: 0;
+  }
+
+  .homeScreenImg2 {
+    display: flex;
     width: 100%;
+    margin: 30% 20% 0 0;
+  }
+
+  .h1-homeScreen {
+    letter-spacing: 2px;
+    width: 200%;
+    margin-bottom: 10%;
+  }
+
+  .main-text {
+    margin-left: -6.2%;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 820px) {
+  .homeScreenImg1 {
+    width: 95%;
+    margin-top: 25%;
+  }
+
+  .homeScreenImg2 {
+    width: 122%;
+    margin: 30% 0 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homeScreenImg2 {
+    width: 102%;
+  }
+
+  .h1-homeScreen {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .homeScreenImg2 {
+    margin-left: 55%;
+  }
+
+  .h1-homeScreen {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .homeScreenImg1 {
+    width: 100%;
+  }
+
+  .homeScreenImg2 {
+    width: 100%;
+    margin-left: 40.5%;
+  }
+
+  .main-text {
+    margin-left: -5%;
+  }
+}
+
+@media (min-width: 1438px) {
+  .homeScreenImg1 {
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .homeScreenImg2 {
+    width: 85%;
+    margin-left: 35.5%;
   }
 
   .h1-homeScreen {
     letter-spacing: 6px;
-    width: 100%;
-    font-size: 25px;
   }
 
   .main-text {
-    margin-left: 0;
-    padding-top: 10%;
-  }
-
-  .homeScreenImg2 {
-    display: none;
+    margin-left: -10%;
   }
 }
