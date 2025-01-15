@@ -48,7 +48,7 @@ const Prices = () => {
       >
         <Container>
           <Row>
-            <Col lg={6} style={{ paddingTop: "7%" }}>
+            <Col lg={6} md={6} style={{ paddingTop: "7%" }}>
               <Row className="text-start" style={{ marginLeft: "10%" }}>
                 <h3>HERE YOU CAN FIND</h3>
                 <h1 className="h1-prices">prices</h1>
@@ -74,12 +74,13 @@ const Prices = () => {
                     window.location.href = url;
                   }}
                   style={{ width: "auto" }}
+                  className="btn-prices"
                 >
                   BOKA TID
                 </Button>
               </Row>
             </Col>
-            <Col lg={6} className="text-end col-prices-img">
+            <Col lg={6} md={6} className="text-end col-prices-img">
               <img
                 className="pricesImg"
                 src="pricesScreen_img.png"
