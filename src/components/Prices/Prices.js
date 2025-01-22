@@ -13,19 +13,19 @@ const Prices = () => {
   const prices_arr = [
     {
       title: "dam/herr klippning",
-      price: "599/499 SEK",
+      price: "649/549 SEK",
     },
     {
       title: "barnklippning",
-      price: "350 SEK",
+      price: "370 SEK",
     },
     {
       title: "färgning",
-      price: "fr 1150 SEK",
+      price: "fr 1159 SEK",
     },
     {
       title: "balayage",
-      price: "fr 1990 SEK",
+      price: "fr 1999 SEK",
     },
     {
       title: "foljeslingor",
@@ -51,7 +51,7 @@ const Prices = () => {
             <Col lg={6} md={6} style={{ paddingTop: "7%" }}>
               <Row className="text-start" style={{ marginLeft: "10%" }}>
                 <h3>HERE YOU CAN FIND</h3>
-                <h1 className="h1-prices">prices</h1>
+                <h1 className="h1-prices">prislista</h1>
               </Row>
               <Row style={{ marginLeft: "10%", marginTop: "5%" }}>
                 {prices_arr.map(({ title, price }, index) => (

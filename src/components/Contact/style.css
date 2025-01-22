@@ -90,4 +90,8 @@ h4 {
   .p-contact {
     font-size: 20px;
   }
+
+  .icons {
+    width: 80%;
+  }
 }
