@@ -10,7 +10,7 @@ const Contact = () => {
       src: "phone.png",
       alt: "phone",
       title: "HAVE QUESTIONS?",
-      desc: '<a class="a-contact" href="tel:0733708990">073-370-89-90</a>',
+      desc: '<a class="a-contact" href="tel:0737308990">073-730-89-90</a>',
     },
     {
       src: "pin.png",
